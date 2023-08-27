@@ -39,5 +39,5 @@ $mail->Body = $message; // Body of the email
 // Attempt to send the email
 $mail->send();
 
-// Display a success message after sending the email
-echo "email sent";
+// Redirect
+header("Location: sent.html");
